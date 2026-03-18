@@ -1,0 +1,96 @@
+# Site settings
+title: Eric Chow
+subtitle: "Robotics · Software · Intelligence"
+description: >-
+  Portfolio of Eric Chow — robotics engineer building full-stack autonomous systems,
+  from custom PCBs to LLM-driven intelligence.
+url: "https://hychowah.github.io"
+baseurl: ""
+
+# Theme
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "dark"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+# Author
+author:
+  name: "Eric Chow"
+  bio: >-
+    Robotics engineer specializing in full-stack autonomous systems —
+    hardware, embedded, software, and LLM-driven intelligence.
+  location: "Hong Kong"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hychowah"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/hychowah"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:hychowah@gmail.com"
+
+# Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hychowah"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/hychowah"
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Defaults
+defaults:
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: false
+      share: false
+  # _posts (if you ever add a blog)
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+
+# Reading
+encoding: "utf-8"
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE

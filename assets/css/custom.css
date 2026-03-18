@@ -1,0 +1,54 @@
+/* Custom overrides for minimal-mistakes dark skin */
+
+/* Slightly adjust link color for better contrast */
+.page__content a:not(.btn) {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.page__content a:not(.btn):hover {
+  border-bottom-color: #f2a365;
+}
+
+/* Project grid cards */
+.feature__item .archive__item {
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature__item .archive__item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Technology tags at bottom of project pages */
+.page__content code {
+  background-color: #2d2d2d;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.85em;
+}
+
+/* Gallery improvements */
+.gallery img {
+  border-radius: 4px;
+}
+
+/* Skills table */
+.page__content table {
+  border-collapse: collapse;
+}
+
+.page__content table th {
+  background-color: #1e1e2e;
+  font-weight: 600;
+}
+
+.page__content table td,
+.page__content table th {
+  border: 1px solid #333;
+  padding: 8px 12px;
+}
