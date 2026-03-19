@@ -5,7 +5,7 @@ description: >-
   Portfolio of Eric Chow — robotics engineer building full-stack autonomous systems,
   from custom PCBs to LLM-driven intelligence.
 url: "https://hychowah.github.io"
-baseurl: ""
+baseurl: "/project"
 
 # Theme
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
