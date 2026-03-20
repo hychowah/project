@@ -19,11 +19,9 @@ gallery:
 
 ## Overview
 
-*C3 Construction Robotics, Mar 2024 – Present*
-
 A suspended robot that coats large industrial structures autonomously. It hangs from the structure edge, moves along the curved surface, and applies coating — outdoors, in wind, on geometry that doesn't stay constant.
 
-I handle most of the technical stack: mechanical design, custom PCBs, embedded firmware (Teensy, ESP32), the ROS2 control architecture, and the operator UI. The interesting engineering problems are in stability — keeping consistent wall contact on a curved surface while managing yaw control and pendulum dynamics. Swing gets naturally damped by the hose, but yaw is the harder problem. That's where the constrained optimization (NLopt), Kalman filtering, and optical flow come in.
+I handle most of the technical stack: mechanical design, custom PCBs, embedded firmware (Teensy, ESP32), the ROS2 control architecture, and the operator UI. The interesting engineering problems are in stability — keeping consistent wall contact on a curved surface while damping pendulum swing. That's where the constrained optimization (NLopt), Kalman filtering, and optical flow come in.
 
 The operator interface runs on a handheld Linux device with a custom PySide6/QML UI, live camera feeds via GStreamer, and a workflow engine that tracks position-triggered actions.
 
