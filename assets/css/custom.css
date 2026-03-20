@@ -1,5 +1,74 @@
 /* Custom overrides for minimal-mistakes dark skin */
 
+/* Hero slideshow — infinite horizontal scroll marquee */
+.hero-slideshow {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 2em;
+}
+
+.hero-slideshow__track {
+  display: flex;
+  gap: 12px;
+  width: max-content;
+  animation: hero-scroll 40s linear infinite;
+}
+
+.hero-slideshow__item {
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.hero-slideshow__item img {
+  height: 320px;
+  width: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+.hero-slideshow__label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  padding: 1em;
+  pointer-events: none;
+}
+
+.hero-slideshow__label small {
+  display: block;
+  font-size: 0.7em;
+  font-weight: 400;
+  margin-top: 0.3em;
+  opacity: 0.8;
+}
+
+.hero-slideshow__item:hover .hero-slideshow__label {
+  opacity: 1;
+}
+
+@keyframes hero-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.hero-slideshow:hover .hero-slideshow__track {
+  animation-play-state: paused;
+}
+
 /* Slightly adjust link color for better contrast */
 .page__content a:not(.btn) {
   text-decoration: none;

@@ -6,5 +6,15 @@ vendor/
 .bundle/
 Gemfile.lock
 *.swp
+*.gem
 .DS_Store
 Thumbs.db
+.env
+.vscode/
+node_modules/
+
+# Internal company images — do not push to remote
+assets/images/projects/painter_developing_roller_mechanism.jpg
+assets/images/projects/painter_doing_spraying_operation.png
+assets/images/projects/painter_ui_screencast.gif
+assets/images/projects/painter_moving_base.jpg

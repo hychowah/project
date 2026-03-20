@@ -1,38 +1,46 @@
 ---
-title: "Cable-Suspended Robot for Deep-Foundation Inspection"
+title: "Cable-Suspended Robot for Deep-Foundation Cleaning & Inspection"
 excerpt: >-
   Patented cable-suspended robotic platform replacing manual methods for
-  deep-foundation inspection. Co-inventor, US Patent 12,398,527 B2.
+  deep-foundation cleaning and inspection. Co-inventor, US Patent 12,398,527 B2.
 order: 3
 featured: true
 header:
-  teaser: /assets/images/projects/cable-robot-teaser.png
-  overlay_image: /assets/images/projects/cable-robot-hero.png
+  teaser: /assets/images/projects/bored_pile_project_during_operation.jpg
+  overlay_image: /assets/images/projects/bored_pile_project_mid_air_testing.jpg
   overlay_filter: 0.5
-toc: true
+gallery:
+  - url: /assets/images/projects/bored_pile_project_during_operation.jpg
+    image_path: /assets/images/projects/bored_pile_project_during_operation.jpg
+    alt: "Cable robot during operation"
+    title: "Robot platform during field operation"
+  - url: /assets/images/projects/bored_pile_project_mid_air_testing.jpg
+    image_path: /assets/images/projects/bored_pile_project_mid_air_testing.jpg
+    alt: "Mid-air testing of cable robot"
+    title: "Platform during mid-air testing"
+  - url: /assets/images/projects/bored_pile_project_eletrical_box.jpg
+    image_path: /assets/images/projects/bored_pile_project_eletrical_box.jpg
+    alt: "Electrical control box"
+    title: "Electrical control enclosure"
 ---
 
 ## Overview
 
-A **patented cable-suspended robotic platform** developed at The Chinese University of Hong Kong (CUHK) for inspecting deep foundations — replacing costly and hazardous manual methods like Reverse Circulation Drilling (RCD).
-
-The system uses multiple synchronized winches to lower a robotic platform into deep foundation shafts, where it performs inspection and cleaning operations autonomously.
+A cable-suspended robotic platform for cleaning and inspecting deep foundations, developed at CUHK. The traditional method (Reverse Circulation Drilling) is expensive and hazardous — this robot gets lowered in on synchronized cables instead.
 
 **Patent:** US 12,398,527 B2 — [View on Google Patents →](https://patents.google.com/patent/US12398527B2/en)
 
-## My Contributions
+## What I Did
 
-As a **Research Assistant** (Dec 2022 – Mar 2024), I developed the control software and led field testing:
+As a Research Assistant at CUHK (Dec 2022 – Mar 2024), I wrote the control software and ran field tests:
 
-- **Multi-winch synchronization** — Programmed coordinated control of multiple cable winches to ensure stable platform deployment at depths up to 15 meters
-- **Cable-actuated flexible hose control** — Developed control logic for an air-lift cleaning system using cable-actuated flexible hoses
-- **On-site prototype testing** — Led testing in active construction zones, troubleshooting sensor feedback loops and system stability under real-world conditions
+- Programmed multi-winch synchronization for stable deployment down to 15 meters
+- Control logic for a cable-actuated air-lift cleaning hose
+- On-site testing in active construction zones — real mud, real deadlines, real debugging
 
-## Context
+This was also my first time working with Linux and ROS. I went with ROS1 because, as a beginner, most tutorials available at the time were for ROS1.
 
-Deep-foundation inspection is traditionally done via RCD — an expensive, time-consuming process. This robotic platform provides a faster, safer, and more cost-effective alternative by automating the descent, inspection, and cleaning process.
-
-The work built directly on my mechanical engineering background and set the foundation for my current role in construction robotics, where I apply the same cable-suspended principles at a larger scale.
+This project is what got me into construction robotics. I now work on similar suspended systems at a larger scale.
 
 ## Patent Details
 
@@ -46,4 +54,8 @@ The work built directly on my mechanical engineering background and set the foun
 
 ## Technologies
 
-`Python` · `Multi-winch Control` · `Cable Robotics` · `Sensor Fusion` · `Field Robotics` · `Prototyping`
+`ROS1` · `Linux` · `Python` · `Multi-winch Control` · `Cable Robotics` · `Sensor Fusion` · `Field Robotics` · `Prototyping`
+
+## Gallery
+
+{% include gallery caption="Photos from development and field testing." %}

@@ -8,15 +8,20 @@ toc: true
 
 ## Background
 
-I'm a robotics engineer based in Hong Kong with a background in mechanical engineering (HKUST, Dean's List) and an MSc in Mechanical and Automation Engineering (CUHK). I've worked across consumer product R&D, academic research robotics, and industrial construction robotics.
+I'm a robotics engineer based in Hong Kong with a background in mechanical engineering (HKUST, Dean's List) and an MSc in Mechanical and Automation Engineering (CUHK). I've worked across consumer product design, academic research robotics, and industrial construction robotics.
 
 What sets me apart is **full-stack ownership** — I don't just write code or just design hardware. I build entire systems: mechanical design, custom PCB electronics, embedded firmware, desktop control software, distributed ROS2 architectures, and recently, LLM-driven intelligence layers.
 
-## Current Role
+## Career Timeline
 
-**Senior Mechanical Engineer** at **C3 Construction Robotics** (Mar 2024 – Present)
+**Senior Mechanical Engineer** — C3 Construction Robotics (Mar 2024 – Present)
+Technical lead on autonomous robotic systems for industrial surface treatment. My work spans mechanical design, custom electronics, embedded firmware, controls, and operator interfaces, with a strong focus on getting cross-disciplinary systems to work reliably outside the lab.
 
-Sole engineer and technical lead for an autonomous suspended robotic system for industrial surface treatment. I designed the entire system loop — mechanical hardware, custom electronics, real-time control software, and operator interfaces — and managed the transition from conceptual R&D to full-scale field deployment.
+**Research Assistant** — The Chinese University of Hong Kong (Dec 2022 – Mar 2024)
+Developed a patented cable-suspended robotic platform for deep-foundation cleaning and inspection. This was my first time working with Linux and ROS.
+
+**Engineering Trainee** — Continental Conair Limited (Jan 2019 – Jan 2021)
+Personal care product design and development.
 
 ## Technical Skills
 

@@ -1,11 +1,11 @@
 # Site settings
 title: Eric Chow
-subtitle: "Robotics · Software · Intelligence"
+subtitle: "Mechanical · Embedded · Software"
 description: >-
   Portfolio of Eric Chow — robotics engineer building full-stack autonomous systems,
   from custom PCBs to LLM-driven intelligence.
 url: "https://hychowah.github.io"
-baseurl: "/project"
+baseurl: ""
 
 # Theme
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
@@ -22,9 +22,7 @@ kramdown:
 
 # Plugins
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-feed
   - jekyll-include-cache
   - jekyll-remote-theme
 
@@ -32,29 +30,17 @@ plugins:
 author:
   name: "Eric Chow"
   bio: >-
-    Robotics engineer specializing in full-stack autonomous systems —
-    hardware, embedded, software, and LLM-driven intelligence.
+    Robotics engineer with full-stack experience across hardware, embedded,
+    and software — giving me a system-level perspective on how things fit together.
   location: "Hong Kong"
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/hychowah"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/hychowah"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:hychowah@gmail.com"
 
 # Footer
 footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/hychowah"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/hychowah"
+  links: []
 
 # Collections
 collections:
@@ -79,15 +65,6 @@ defaults:
       layout: single
       author_profile: false
       share: false
-  # _posts (if you ever add a blog)
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-
 # Reading
 encoding: "utf-8"
 
