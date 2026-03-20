@@ -80,11 +80,36 @@
 }
 
 /* Project grid cards */
+.feature__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature__item {
+  display: flex;
+}
+
 .feature__item .archive__item {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #333;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature__item .archive__item-teaser {
+  flex-shrink: 0;
+}
+
+.feature__item .archive__item-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature__item .archive__item-excerpt {
+  flex: 1;
 }
 
 .feature__item .archive__item:hover {
