@@ -38,19 +38,9 @@ As a Research Assistant at CUHK (Dec 2022 – Mar 2024), I wrote the control sof
 - Control logic for a cable-actuated air-lift cleaning hose
 - On-site testing in active construction zones — real mud, real deadlines, real debugging
 
-This was also my first time working with Linux and ROS. I went with ROS1 because, as a beginner, most tutorials available at the time were for ROS1.
+This was also my first time working with Linux and ROS. I went with ROS1 because, as a beginner, most tutorials at the time were still for ROS1.
 
-This project is what got me into construction robotics. I now work on similar suspended systems at a larger scale.
-
-## Patent Details
-
-| Field | Details |
-|-------|---------|
-| **Patent Number** | US 12,398,527 B2 |
-| **Title** | Cable-suspended robotic platform |
-| **Assignee** | The Chinese University of Hong Kong |
-| **Status** | Granted |
-| **Link** | [Google Patents](https://patents.google.com/patent/US12398527B2/en) |
+This project is what got me into construction robotics. I now work on a similar suspended system with higher complexity.
 
 ## Technologies
 
