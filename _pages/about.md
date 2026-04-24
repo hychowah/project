@@ -38,7 +38,7 @@ Personal care product design and development.
 ## Education
 
 - **MSc Mechanical & Automation Engineering** — The Chinese University of Hong Kong (2021–2022)
-- **BSc Mechanical Engineering** — The Hong Kong University of Science and Technology (2014–2018, Dean's List)
+- **BEng Mechanical Engineering** — The Hong Kong University of Science and Technology (2014–2018, Dean's List)
 
 ## Patent
 

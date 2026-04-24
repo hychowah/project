@@ -26,11 +26,11 @@ gallery:
 
 A suspended robot that coats large industrial structures autonomously. It hangs from the structure edge, moves along the surface while suspended in open air, and has to stay stable around geometry that is curved, irregular, and exposed to field conditions.
 
-My work spans a broad slice of the system: ROS2 control software, embedded hardware integration, operator tooling, camera and telemetry infrastructure, and the supporting electronics and field-ready interfaces needed to make the robot usable outside a lab setting. The software control layer is the center of that work, because the machine behaves like a pendulum, yaw drift is persistent, and wall alignment is not stable by default. The job is to turn that full stack into a system that stays predictable enough to run repeatable coating passes.
+I led development across most of the system: ROS2 control software, embedded hardware integration, operator tooling, camera and telemetry infrastructure, and the supporting electronics and field-ready interfaces needed to make the robot usable outside a lab setting. The software control layer is the center of that work, because the machine behaves like a pendulum, yaw drift is persistent, and wall alignment is not stable by default. The job is to turn that full stack into a system that stays predictable enough to run repeatable coating passes.
 
 ## Control Architecture
 
-I built the ROS2 control stack as a multi-node system coordinating the drive, winch, end-effector, and support subsystems. That includes the interfaces to embedded controllers over serial and UDP, device discovery and reconnection logic, and the abstractions the rest of the application depends on so hardware can be commanded consistently in both field and test scenarios.
+I built the ROS2 control stack as a multi-node system coordinating the drive, winch, end-effector, and support subsystems. That includes the interfaces to embedded controllers over serial and UDP, device discovery and reconnection logic, and the abstractions the rest of the application depends on so hardware can be commanded consistently in both field and test scenarios. It also includes the supporting electronics integration around those controllers, so the control software and hardware interfaces were developed as one practical system rather than as separate layers.
 
 For wall-relative control, I focused on yaw stabilization and actuator coordination rather than simple direct-output control. The controller computes the moment and force requirements needed to keep the tool aligned, and a constrained allocation layer determines how the vectorable propellers should respond within the robot's physical limits. Gain scheduling by arm extension keeps the same control structure usable across changing pendulum dynamics as the mechanism moves through its working range.
 
@@ -44,8 +44,8 @@ This perception stack exists to support the controller, not as a separate demo p
 
 I also built the operator-facing software that makes the system practical to deploy. The UI runs on a handheld Linux device using Python, PySide6, and QML, with live telemetry, multi-page controls, multi-display support, camera feeds, and emergency control flows designed for field use rather than lab demos.
 
-Around that UI, I added the workflow execution and support tooling needed for real operation: YAML-defined workflow sequencing, time- and position-based triggers, GStreamer and OpenCV camera pipelines, remote data logging, local screen recording, and device-status monitoring. That lets operators run semi-autonomous coating passes while still having direct visibility into system state, video, and recovery actions.
+Around that UI, I added the workflow execution and support tooling needed for real operation: YAML-defined workflow sequencing, time- and position-based triggers, GStreamer and OpenCV camera pipelines, remote data logging, local screen recording, and device-status monitoring. That lets operators run semi-autonomous coating passes while still having direct visibility into system state, video, and recovery actions, and it reflects how much of the deployable stack had to be built together rather than as isolated components.
 
-**Technologies:** `ROS2` · `Python` · `C++` · `PySide6/QML` · `Embedded C++` · `Serial / UDP hardware interfaces` · `NLopt` · `LiDAR + IMU estimation` · `OpenCV` · `GStreamer` · `Electronics integration`
+**Technologies:** `ROS2` · `Python` · `C++` · `PySide6/QML` · `Embedded C++` · `Serial / UDP hardware interfaces` · `NLopt` · `Sensor fusion` · `OpenCV` · `GStreamer` · `Electronics integration` · `SolidWorks` · `FEA` · `3D printing` · `Sheet metal` · `CNC`
 
 {% include gallery caption="Source: C3 Construction Robotics" %}
