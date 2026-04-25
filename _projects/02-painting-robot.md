@@ -1,8 +1,8 @@
 ---
 title: "Autonomous Suspended Painting Robot"
 excerpt: >-
-  Full-stack robot development centered on ROS2 controls, wall-alignment
-  estimation, and operator tooling for a suspended coating system.
+  Suspended robot development spanning mechanical design, ROS2 controls,
+  and operator tooling for a field-deployed coating system.
 order: 2
 featured: true
 header:
@@ -26,11 +26,19 @@ gallery:
 
 A suspended robot that coats large industrial structures autonomously. It hangs from the structure edge, moves along the surface while suspended in open air, and has to stay stable around geometry that is curved, irregular, and exposed to field conditions.
 
-I led development across most of the system: ROS2 control software, embedded hardware integration, operator tooling, camera and telemetry infrastructure, and the supporting electronics and field-ready interfaces needed to make the robot usable outside a lab setting. The software control layer is the center of that work, because the machine behaves like a pendulum, yaw drift is persistent, and wall alignment is not stable by default. The job is to turn that full stack into a system that stays predictable enough to run repeatable coating passes.
+I was the lead engineer and technical lead for the system, taking it from early proof-of-concept work through live spray deployment and the later roller-based redesign. The work was split across both sides of the robot: the mechanical system that had to survive field use and stay controllable while suspended, and the software stack that had to coordinate hardware, estimation, workflows, and operator-facing tools.
+
+## Mechanical Design And Validation
+
+I owned the mechanical design end to end: the cable suspension frame, the dual-gimbal thrust-vectoring propulsion system, the spray gun and roller end effectors, and the sealed enclosures that packaged the electronics for outdoor use. That work was not separate from the controls problem. The robot behaves like a pendulum, so the structure, actuation layout, cable routing, and mounting decisions all directly affected how stable and controllable the machine could be.
+
+I used SolidWorks and SolidWorks Simulation for structural validation, including static FEA and buckling analysis on sheet metal structures. For lighter custom parts, I used topology optimisation to reduce mass on 3D-printed brackets while keeping enough stiffness for field loads. Mechanism work included the dual-gimbal thrust-vectoring assembly for active stabilisation, quick-change mounting for spray and roller tools, and cable routing and strain relief through moving assemblies.
+
+Built and tested prototype iterations in-house, from proof-of-concept hardware through field-trial units. A big part of the mechanical work was choosing the right combination of sheet metal, CNC-machined parts, and 3D-printed components based on cost, development time, design constraints, weight, and safety. The goal was not just to make parts fit, but to make the system practical to fabricate, assemble, repair, and revise quickly between test cycles.
 
 ## Control Architecture
 
-I built the ROS2 control stack as a multi-node system coordinating the drive, winch, end-effector, and support subsystems. That includes the interfaces to embedded controllers over serial and UDP, device discovery and reconnection logic, and the abstractions the rest of the application depends on so hardware can be commanded consistently in both field and test scenarios. It also includes the supporting electronics integration around those controllers, so the control software and hardware interfaces were developed as one practical system rather than as separate layers.
+I built the ROS2 control stack as a multi-node system coordinating the drive, winch, end-effector, and support subsystems. That included interfaces to embedded controllers over serial and UDP, device discovery and reconnection logic, and the abstractions needed so hardware could be commanded consistently in both field and test scenarios. I also designed the mechanical and electrical interfaces around those controllers, so the software stack and hardware integration were developed together rather than handed off between separate disciplines.
 
 For wall-relative control, I focused on yaw stabilization and actuator coordination rather than simple direct-output control. The controller computes the moment and force requirements needed to keep the tool aligned, and a constrained allocation layer determines how the vectorable propellers should respond within the robot's physical limits. Gain scheduling by arm extension keeps the same control structure usable across changing pendulum dynamics as the mechanism moves through its working range.
 
@@ -46,6 +54,6 @@ I also built the operator-facing software that makes the system practical to dep
 
 Around that UI, I added the workflow execution and support tooling needed for real operation: YAML-defined workflow sequencing, time- and position-based triggers, GStreamer and OpenCV camera pipelines, remote data logging, local screen recording, and device-status monitoring. That lets operators run semi-autonomous coating passes while still having direct visibility into system state, video, and recovery actions, and it reflects how much of the deployable stack had to be built together rather than as isolated components.
 
-**Technologies:** `ROS2` · `Python` · `C++` · `PySide6/QML` · `Embedded C++` · `Serial / UDP hardware interfaces` · `NLopt` · `Sensor fusion` · `OpenCV` · `GStreamer` · `Electronics integration` · `SolidWorks` · `FEA` · `3D printing` · `Sheet metal` · `CNC`
+**Technologies:** `ROS2` · `Python` · `C++` · `PySide6/QML` · `Embedded C++` · `Serial / UDP hardware interfaces` · `NLopt` · `Sensor fusion` · `OpenCV` · `GStreamer` · `Electronics integration` · `SolidWorks` · `SolidWorks Simulation` · `FEA` · `3D printing` · `Sheet metal` · `CNC`
 
 {% include gallery caption="Source: C3 Construction Robotics" %}
