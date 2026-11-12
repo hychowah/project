@@ -1,0 +1,11 @@
+# Local remnants of earlier builds are not publication input.
+/vendor/
+/.bundle/
+/_site/
+/.jekyll-cache/
+/.jekyll-metadata
+/.sass-cache/
+.DS_Store
+Thumbs.db
+.env
+*.swp

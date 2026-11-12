@@ -1,0 +1,295 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Expandable-Wheelbase Mobile Robot - Eric Chow</title>
+<meta name="description" content="MSc project — a four-wheel independently-steered mobile platform with a linear extending mechanism for adjustable wheelbase and tilt control, completed in under 3 months from home during a void period.">
+
+
+  <meta name="author" content="Eric Chow">
+  
+  <meta property="article:author" content="Eric Chow">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Eric Chow">
+<meta property="og:title" content="Expandable-Wheelbase Mobile Robot">
+<meta property="og:url" content="https://hychowah.github.io/project/projects/04-msc-mobile-robot/">
+
+
+  <meta property="og:description" content="MSc project — a four-wheel independently-steered mobile platform with a linear extending mechanism for adjustable wheelbase and tilt control, completed in under 3 months from home during a void period.">
+
+
+
+  <meta property="og:image" content="https://hychowah.github.io/project/assets/images/projects/mobile-robot/prototype.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2026-11-12T11:34:12+08:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://hychowah.github.io/project/projects/04-msc-mobile-robot/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="text/javascript">
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/project/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <link rel="icon" type="image/svg+xml" href="/project/assets/images/favicon.svg">
+<link rel="stylesheet" href="/project/assets/css/custom.css">
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/project/">
+          Eric Chow
+          <span class="site-subtitle">Robotics systems · Mechanical · Embedded</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/project/projects/"
+                
+                
+              >Projects</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/project/about/"
+                
+                
+              >About</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/project/assets/images/projects/mobile-robot/prototype.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Expandable-Wheelbase Mobile Robot
+
+        
+      </h1>
+      
+        <p class="page__lead">MSc project — a four-wheel independently-steered mobile platform with a linear extending mechanism for adjustable wheelbase and tilt control, completed in under 3 months from home during a void period.
+</p>
+      
+      
+
+
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Expandable-Wheelbase Mobile Robot">
+    <meta itemprop="description" content="MSc project — a four-wheel independently-steered mobile platform with a linear extending mechanism for adjustable wheelbase and tilt control, completed in under 3 months from home during a void period.">
+    <meta itemprop="datePublished" content="2026-11-12T11:34:12+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="overview">Overview</h2>
+
+<p><em>MSc Project, CUHK, 2021–2022</em></p>
+
+<p>An MSc project at CUHK completed in under three months, entirely from home during a void period with no lab access. The 3D printer I built earlier turned out to be essential here.</p>
+
+<p>The idea: a four-wheel mobile robot where each wheel steers independently, and the wheelbase can physically extend outward. Squeeze through a narrow gap, then widen out for stability on the other side. The extension mechanism is angled, so pushing the wheels out also tilts the platform — one actuator, two degrees of freedom. I did the kinematics in MATLAB and ran the whole thing on an ESP32 with FreeRTOS.</p>
+
+<p>This was my first real embedded project. Before this I’d only done mechanical design. Figuring out FreeRTOS task scheduling while also trying to get four wheels to agree on a direction was a steep but useful learning curve.</p>
+
+<h2 id="technologies">Technologies</h2>
+
+<p><code class="language-plaintext highlighter-rouge">ESP32</code> · <code class="language-plaintext highlighter-rouge">FreeRTOS</code> · <code class="language-plaintext highlighter-rouge">SolidWorks</code> · <code class="language-plaintext highlighter-rouge">MATLAB</code> · <code class="language-plaintext highlighter-rouge">Kinematics</code> · <code class="language-plaintext highlighter-rouge">Prototyping</code></p>
+
+<h2 id="gallery">Gallery</h2>
+
+<figure class="half ">
+  
+    
+      <a href="/project/assets/images/projects/mobile-robot/prototype.jpg" title="Prototype with four active steering wheels">
+          <img src="/project/assets/images/projects/mobile-robot/prototype.jpg" alt="Mobile robot hardware prototype" />
+      </a>
+    
+  
+    
+      <a href="/project/assets/images/projects/mobile-robot/electronics.jpg" title="Early electronics work">
+          <img src="/project/assets/images/projects/mobile-robot/electronics.jpg" alt="Learning electronics during the project" />
+      </a>
+    
+  
+  
+    <figcaption>Photos from prototype development.
+</figcaption>
+  
+</figure>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2026-11-12T11:34:12+08:00">November 12, 2026</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/project/projects/03-cable-robot/" class="pagination--pager" title="Cable-Suspended Robot for Deep-Foundation Cleaning &amp; Inspection
+">Previous</a>
+    
+    
+      <a href="/project/projects/05-3d-printer/" class="pagination--pager" title="Custom-Designed FDM 3D Printer
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://hychowah.github.io">Eric Chow</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/project/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
