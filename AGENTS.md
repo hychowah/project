@@ -1,0 +1,11 @@
+# Publishing repository
+
+This repository contains generated website releases. Do not edit generated HTML or develop source code here.
+
+Make changes in the owner's private authoring repository, follow its `AGENTS.md`, and use its documented publisher. Locate that checkout or ask the owner if it is unavailable.
+
+Only generated files under `site/`, this guide, `README.md`, `.gitignore` and the deployment workflow belong here. Do not copy authoring history, Markdown source, private documents, internal notes, source maps or build logs into this repository.
+
+This repository must always contain exactly one parentless commit on main, with no other branches or tags. Use the documented publisher to replace the current snapshot on each authorized release; never append a commit. This is the owner's standing publishing rule. Keep recovery data and development history in the private authoring checkout.
+
+Use a neutral `Publish website` message and a GitHub noreply commit address. Do not merge or cherry-pick authoring commits here. Verify that the public remote has one commit after publishing.
