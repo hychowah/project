@@ -1,0 +1,1117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="asm_main">
+  <!-- CAD zero pose. Positive PIP curls the finger. DIP and rod mimic slopes are fitted over the exported PIP range. The physical four-bar relation is nonlinear. -->
+  <link name="root">
+    <inertial>
+      <mass value="0.000453968" />
+      <origin xyz="0.0380127 -0.023919 0.0190822" rpy="0 -0 0" />
+      <inertia ixx="3.39766e-07" ixy="3.74406e-08" ixz="2.08351e-08" iyy="4.65534e-07" iyz="-4.28708e-08" izz="3.07047e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0.0359017 -0.000129575 0.0193223" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_2.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0265667 -0.0115248 0.0309578" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/PH_Countersunk_flat_head_screw_M2x0_4_x_4.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.603922_0.647059_0.686275_0.000000_0.000000">
+        <color rgba="0.603922 0.647059 0.686275 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0359017 -0.000129575 0.0193223" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0176017 -0.0301296 -0.0153777" rpy="0 -1.5708 1.5708" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/thumb_mount.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+        <color rgba="0.972549 0.529412 0.00392157 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0744017 -0.0251296 0.0513223" rpy="-3.46945e-16 -4.24885e-32 -3.14159" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_3.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+        <color rgba="0.972549 0.529412 0.00392157 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0372728 -0.0261296 0.0593223" rpy="-3.46945e-16 5.61191e-32 -3.14159" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_3.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+        <color rgba="0.972549 0.529412 0.00392157 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0372728 -0.0261296 0.0593223" rpy="-4.02456e-16 -2.77556e-17 -3.14159" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_3.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.498039_0.498039_0.498039_0.000000_0.000000">
+        <color rgba="0.498039 0.498039 0.498039 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0372728 -0.0411296 0.0593223" rpy="3.14159 7.05105e-15 3.14159" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_2.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+        <color rgba="0.647059 0.647059 0.647059 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0744017 -0.0251296 0.0513223" rpy="-3.45557e-15 -6.71135e-15 -3.14159" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_3.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.498039_0.498039_0.498039_0.000000_0.000000">
+        <color rgba="0.498039 0.498039 0.498039 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0744017 -0.0401296 0.0513223" rpy="3.14159 7.05105e-15 3.14159" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_2.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+        <color rgba="0.647059 0.647059 0.647059 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.00260166 -0.0200296 0.0273223" rpy="-3.14159 3.36622e-15 -1.5708" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/index_mount.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.537255_0.854902_0.827451_0.000000_0.000000">
+        <color rgba="0.537255 0.854902 0.827451 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.00260166 -0.0200296 0.0273223" rpy="-3.14159 3.36622e-15 -1.5708" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_3.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.498039_0.498039_0.498039_0.000000_0.000000">
+        <color rgba="0.498039 0.498039 0.498039 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="-0.0123983 -0.0200296 0.0273223" rpy="1.35053e-27 -3.68483e-15 -1.5708" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_2.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+        <color rgba="0.647059 0.647059 0.647059 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0176017 -0.0301296 -0.0153777" rpy="0 -1.5708 1.5708" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_3.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.498039_0.498039_0.498039_0.000000_0.000000">
+        <color rgba="0.498039 0.498039 0.498039 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.00260166 -0.0301296 -0.0153777" rpy="0 -1.5708 -1.5708" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_2.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+        <color rgba="0.647059 0.647059 0.647059 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0359017 -0.000129575 0.0193223" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_2.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="thumb_base">
+    <inertial>
+      <mass value="1.08088e-05" />
+      <origin xyz="0.0135029 0.0173153 0.0152961" rpy="0 -0 0" />
+      <inertia ixx="1.60199e-09" ixy="-1.24146e-10" ixz="3.33974e-11" iyy="2.33047e-09" iyz="-1.50673e-10" izz="2.36513e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0.0068 -0.00495377 0.00563118" rpy="-0.849309 1.1618e-14 -2.03423e-15" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_3_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.768627_0.886275_0.952941_0.000000_0.000000">
+        <color rgba="0.768627 0.886275 0.952941 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0178 0.0247064 0.0112791" rpy="-1.17661e-15 -0.849309 -1.5708" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_3.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.498039_0.498039_0.498039_0.000000_0.000000">
+        <color rgba="0.498039 0.498039 0.498039 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0328 0.0247064 0.0112791" rpy="-3.14159 -0.849309 -1.5708" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_2.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+        <color rgba="0.647059 0.647059 0.647059 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="thumb_proximal">
+    <inertial>
+      <mass value="0.000282796" />
+      <origin xyz="0.0249519 -0.0194498 -0.000758206" rpy="0 -0 0" />
+      <inertia ixx="2.25118e-08" ixy="-1.52887e-09" ixz="-6.50244e-11" iyy="2.16917e-08" iyz="4.98803e-10" izz="7.84174e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0.0064 -0.033974 -0.00132975" rpy="-3.10247 7.5265e-15 -2.77846e-14" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_6.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.654902_0.584314_0.823529_0.000000_0.000000">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0064 -0.033974 -0.00132975" rpy="-3.10247 7.60855e-15 -2.89722e-14" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_3.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.498039_0.498039_0.498039_0.000000_0.000000">
+        <color rgba="0.498039 0.498039 0.498039 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0064 -0.0489625 -0.0019164" rpy="0.0391202 -1.09601e-15 -2.29894e-15" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_2.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+        <color rgba="0.647059 0.647059 0.647059 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0064 -0.033974 -0.00132975" rpy="-3.10247 7.51062e-15 -3.05925e-14" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/middle_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0271 -0.0186726 -0.00873697" rpy="-1.5708 0.0391202 -1.5708" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/PH_Countersunk_flat_head_screw_M2x0_4_x_4.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.603922_0.647059_0.686275_0.000000_0.000000">
+        <color rgba="0.603922 0.647059 0.686275 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0.0271 -0.0192983 0.00725079" rpy="-1.5708 0.0391202 -1.5708" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/PH_Countersunk_flat_head_screw_M2x0_4_x_4.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.603922_0.647059_0.686275_0.000000_0.000000">
+        <color rgba="0.603922 0.647059 0.686275 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="thumb_tip">
+    <inertial>
+      <mass value="1.68372e-05" />
+      <origin xyz="0.0134496 0.0190068 0.0169169" rpy="0.712085 -8.19404e-15 -5.69484e-15" />
+      <inertia ixx="2.6673e-09" ixy="9.03157e-11" ixz="1.30156e-12" iyy="1.69916e-09" iyz="-9.62141e-11" izz="3.23054e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0.0068 -0.00567751 -0.0049006" rpy="0.712085 -8.19404e-15 -5.69484e-15" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/distal_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+        <color rgba="0.972549 0.529412 0.00392157 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="index_mount">
+    <inertial>
+      <mass value="1.38415e-05" />
+      <origin xyz="0.00431242 0.00846555 0.0205019" rpy="0 -0 0" />
+      <inertia ixx="3.09804e-09" ixy="1.07257e-10" ixz="-6.33391e-11" iyy="2.24416e-09" iyz="-3.82576e-11" izz="2.76555e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.00228444 0.0129 0.0268192" rpy="3.08035e-15 0.216802 3.72986e-16" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_2_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+        <color rgba="0.647059 0.647059 0.647059 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="-0.00247976 0.0129 0.0268623" rpy="3.3001e-15 0.216802 7.10121e-16" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_3.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.498039_0.498039_0.498039_0.000000_0.000000">
+        <color rgba="0.498039 0.498039 0.498039 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="-0.00247976 0.0279 0.0268623" rpy="3.14159 0.216802 -2.74985e-14" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_2.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+        <color rgba="0.647059 0.647059 0.647059 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="-0.00247976 0.0129 0.0268623" rpy="3.02936e-15 0.216802 4.21567e-16" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_3.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+        <color rgba="0.972549 0.529412 0.00392157 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="index_proximal">
+    <inertial>
+      <mass value="1.42968e-05" />
+      <origin xyz="-0.0106107 0.000441417 0.0286486" rpy="0 -0 0" />
+      <inertia ixx="4.01093e-09" ixy="-1.56191e-11" ixz="8.89528e-13" iyy="4.24701e-09" iyz="4.03759e-11" izz="1.97577e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0175 0.000529204 0.0339959" rpy="1.55523 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_5.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+        <color rgba="0.972549 0.529412 0.00392157 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="-0.0175 0.000529204 0.0339959" rpy="1.55523 1.87049e-16 -7.54773e-17" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_3.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.498039_0.498039_0.498039_0.000000_0.000000">
+        <color rgba="0.498039 0.498039 0.498039 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="-0.0175 0.000762677 0.0489941" rpy="-1.58636 3.46469e-14 2.41209e-15" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_2.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+        <color rgba="0.647059 0.647059 0.647059 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="-0.0175 0.000529204 0.0339959" rpy="1.55523 -5.83993e-18 1.6007e-17" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_6.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.654902_0.584314_0.823529_0.000000_0.000000">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="index_middle">
+    <inertial>
+      <mass value="6.82703e-06" />
+      <origin xyz="0.0135423017113 -0.000644878888855 0.0214641389904" rpy="0.01557 -1.40444414156e-14 -3.14159" />
+      <inertia ixx="1.03363e-09" ixy="-3.18869e-12" ixz="-6.42409e-11" iyy="1.51629e-09" iyz="-8.62551e-11" izz="9.74203e-10" />
+    </inertial>
+    <visual>
+      <origin xyz="0.0129999994217 0.000217954270837 0.0139983038605" rpy="0.01557 -1.40444414156e-14 -3.14159" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/middle.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="index_tip">
+    <inertial>
+      <mass value="7.22119e-06" />
+      <origin xyz="-0.00699989278108 0.000430986619087 0.0156086741633" rpy="-0.00273999999825 -3.53706766112e-06 3.14158798963" />
+      <inertia ixx="6.38339e-10" ixy="2.98543e-15" ixz="1.27091e-15" iyy="6.8116e-10" iyz="2.81363e-11" izz="3.53442e-10" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.00700007617761 0.00141853417177 -0.0234073764177" rpy="-0.00273999999825 -3.53706766112e-06 3.14158798963" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/distal.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="index_rod">
+    <inertial>
+      <mass value="1.24142e-06" />
+      <origin xyz="-0.00269998952404 0.00285199965455 0.0179563540211" rpy="-5.04234999718e-14 1.29769 -1.5708" />
+      <inertia ixx="1.36513e-11" ixy="0" ixz="-1.71227e-11" iyy="1.70473e-10" iyz="0" izz="1.62214e-10" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.00269998142339 0.00505733364925 0.018055081741" rpy="-5.04234999718e-14 1.29769 -1.5708" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_1_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="middle_proximal">
+    <inertial>
+      <mass value="1.42968e-05" />
+      <origin xyz="-0.0106107 0.000441417 0.0286486" rpy="0 -0 0" />
+      <inertia ixx="4.01093e-09" ixy="-1.56191e-11" ixz="8.89528e-13" iyy="4.24701e-09" iyz="4.03759e-11" izz="1.97577e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0175 0.000529204 0.0339959" rpy="1.55523 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_5.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+        <color rgba="0.972549 0.529412 0.00392157 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="-0.0175 0.000529204 0.0339959" rpy="1.55523 1.74553e-19 1.12132e-17" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_3.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.498039_0.498039_0.498039_0.000000_0.000000">
+        <color rgba="0.498039 0.498039 0.498039 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="-0.0175 0.000762677 0.0489941" rpy="-1.58636 2.7934e-14 6.62649e-15" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_2.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+        <color rgba="0.647059 0.647059 0.647059 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="-0.0175 0.000529204 0.0339959" rpy="1.55523 -9.98836e-17 4.79615e-16" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_6.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.654902_0.584314_0.823529_0.000000_0.000000">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="middle_middle">
+    <inertial>
+      <mass value="6.82703e-06" />
+      <origin xyz="0.0135423017113 -0.000644878888855 0.0214641389904" rpy="0.01557 -1.40444414156e-14 -3.14159" />
+      <inertia ixx="1.03363e-09" ixy="-3.18869e-12" ixz="-6.42409e-11" iyy="1.51629e-09" iyz="-8.62551e-11" izz="9.74203e-10" />
+    </inertial>
+    <visual>
+      <origin xyz="0.0129999994217 0.000217954270837 0.0139983038605" rpy="0.01557 -1.40444414156e-14 -3.14159" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/middle.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="middle_tip">
+    <inertial>
+      <mass value="7.22119e-06" />
+      <origin xyz="-0.00699989278108 0.000430986619087 0.0156086741633" rpy="-0.00273999999825 -3.53706766112e-06 3.14158798963" />
+      <inertia ixx="6.38339e-10" ixy="2.98543e-15" ixz="1.27091e-15" iyy="6.8116e-10" iyz="2.81363e-11" izz="3.53442e-10" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.00700007617761 0.00141853417177 -0.0234073764177" rpy="-0.00273999999825 -3.53706766112e-06 3.14158798963" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/distal.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="middle_rod">
+    <inertial>
+      <mass value="1.24142e-06" />
+      <origin xyz="-0.00269998952404 0.00285199965455 0.0179563540211" rpy="-5.04234999718e-14 1.29769 -1.5708" />
+      <inertia ixx="1.36513e-11" ixy="0" ixz="-1.71227e-11" iyy="1.70473e-10" iyz="0" izz="1.62214e-10" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.00269998142339 0.00505733364925 0.018055081741" rpy="-5.04234999718e-14 1.29769 -1.5708" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_1_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="outer_proximal">
+    <inertial>
+      <mass value="1.42968e-05" />
+      <origin xyz="-0.0106107 0.000441417 0.0286486" rpy="0 -0 0" />
+      <inertia ixx="4.01093e-09" ixy="-1.56191e-11" ixz="8.89528e-13" iyy="4.24701e-09" iyz="4.03759e-11" izz="1.97577e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0175 0.000529204 0.0339959" rpy="1.55523 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_5.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+        <color rgba="0.972549 0.529412 0.00392157 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="-0.0175 0.000529204 0.0339959" rpy="1.55523 1.74553e-19 1.12132e-17" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_3.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.498039_0.498039_0.498039_0.000000_0.000000">
+        <color rgba="0.498039 0.498039 0.498039 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="-0.0175 0.000762677 0.0489941" rpy="-1.58636 2.79367e-14 6.6287e-15" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_2.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+        <color rgba="0.647059 0.647059 0.647059 1" />
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="-0.0175 0.000529204 0.0339959" rpy="1.55523 -9.98836e-17 4.79615e-16" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_6.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.654902_0.584314_0.823529_0.000000_0.000000">
+        <color rgba="0.654902 0.584314 0.823529 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="outer_middle">
+    <inertial>
+      <mass value="6.82703e-06" />
+      <origin xyz="0.0135423017113 -0.000644878888855 0.0214641389904" rpy="0.01557 1.80189595016e-16 -3.14159" />
+      <inertia ixx="1.03363e-09" ixy="-3.18869e-12" ixz="-6.42409e-11" iyy="1.51629e-09" iyz="-8.62551e-11" izz="9.74203e-10" />
+    </inertial>
+    <visual>
+      <origin xyz="0.0129999994217 0.000217954270837 0.0139983038605" rpy="0.01557 1.80189595016e-16 -3.14159" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/middle.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="outer_tip">
+    <inertial>
+      <mass value="7.22119e-06" />
+      <origin xyz="-0.00699989278108 0.000430986619087 0.0156086741633" rpy="-0.00273999999825 -3.53706764946e-06 3.14158798963" />
+      <inertia ixx="6.38339e-10" ixy="2.98543e-15" ixz="1.27091e-15" iyy="6.8116e-10" iyz="2.81363e-11" izz="3.53442e-10" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.00700007617761 0.00141853417177 -0.0234073764177" rpy="-0.00273999999825 -3.53706764946e-06 3.14158798963" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/distal.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+        <color rgba="0.917647 0.917647 0.917647 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="outer_rod">
+    <inertial>
+      <mass value="1.24142e-06" />
+      <origin xyz="-0.00269998952404 0.00285199965455 0.0179563540211" rpy="-3.91039e-15 1.29769 -1.5708" />
+      <inertia ixx="1.36513e-11" ixy="0" ixz="-1.71227e-11" iyy="1.70473e-10" iyz="0" izz="1.62214e-10" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.00269998142339 0.00505733364925 0.018055081741" rpy="-3.91039e-15 1.29769 -1.5708" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/Part_1_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="root_hardware_none">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.00134577 1.0487e-10 -0.00239915" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0134822 0.00164499 0.00535121" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
+        <color rgba="0.980392 0.713726 0.00392157 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="root_hardware_none_1">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.000636218 -0.004 -5.60531e-06" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="-2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0127726 -0.00235 -0.00780397" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="root_hardware_none_10">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.000636218 -0.004 -5.60531e-06" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="-2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0127726 -0.00235 -0.00780397" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="root_hardware_none_11">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.00134577 1.0487e-10 -0.00239915" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0134822 0.00164499 0.00535121" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
+        <color rgba="0.980392 0.713726 0.00392157 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="index_mount_hardware_none_14">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.000636218 -0.004 -5.60531e-06" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="-2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0127726 -0.00235 -0.00780397" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="index_mount_hardware_none_15">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.00134577 1.0487e-10 -0.00239915" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0134822 0.00164499 0.00535121" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
+        <color rgba="0.980392 0.713726 0.00392157 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="index_proximal_hardware_none_16">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.00134577 1.0487e-10 -0.00239915" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0134822 0.00164499 0.00535121" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
+        <color rgba="0.980392 0.713726 0.00392157 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="index_proximal_hardware_none_17">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.000636218 -0.004 -5.60531e-06" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="-2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0127726 -0.00235 -0.00780397" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="root_hardware_none_20">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.00134577 1.0487e-10 -0.00239915" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0134822 0.00164499 0.00535121" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
+        <color rgba="0.980392 0.713726 0.00392157 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="root_hardware_none_21">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.000636218 -0.004 -5.60531e-06" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="-2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0127726 -0.00235 -0.00780397" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="outer_proximal_hardware_none_26">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.00134577 1.0487e-10 -0.00239915" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0134822 0.00164499 0.00535121" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
+        <color rgba="0.980392 0.713726 0.00392157 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="outer_proximal_hardware_none_27">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.000636218 -0.004 -5.60531e-06" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="-2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0127726 -0.00235 -0.00780397" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="thumb_proximal_hardware_none_28">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.000636218 -0.004 -5.60531e-06" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="-2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0127726 -0.00235 -0.00780397" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="thumb_proximal_hardware_none_29">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.00134577 1.0487e-10 -0.00239915" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0134822 0.00164499 0.00535121" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
+        <color rgba="0.980392 0.713726 0.00392157 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="root_hardware_none_32">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.00134577 1.0487e-10 -0.00239915" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0134822 0.00164499 0.00535121" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
+        <color rgba="0.980392 0.713726 0.00392157 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="root_hardware_none_34">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.000636218 -0.004 -5.60531e-06" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="-2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0127726 -0.00235 -0.00780397" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="thumb_base_hardware_none_36">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.00134577 1.0487e-10 -0.00239915" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0134822 0.00164499 0.00535121" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
+        <color rgba="0.980392 0.713726 0.00392157 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="thumb_base_hardware_none_37">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.000636218 -0.004 -5.60531e-06" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="-2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0127726 -0.00235 -0.00780397" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="middle_proximal_hardware_none_4">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.000636218 -0.004 -5.60531e-06" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="-2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0127726 -0.00235 -0.00780397" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE_1.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+        <color rgba="0.615686 0.811765 0.929412 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="middle_proximal_hardware_none_7">
+    <inertial>
+      <mass value="1.02659e-07" />
+      <origin xyz="-0.00134577 1.0487e-10 -0.00239915" rpy="0 -0 0" />
+      <inertia ixx="9.41622e-13" ixy="0" ixz="2.49691e-14" iyy="5.87641e-13" iyz="0" izz="1.02868e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0134822 0.00164499 0.00535121" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="package://asm_main/meshes/NONE.stl" scale="1 1 1" />
+      </geometry>
+      <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
+        <color rgba="0.980392 0.713726 0.00392157 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="thumb_base_rotation" type="continuous">
+    <origin xyz="0.0101017 -0.0301296 -0.0221777" rpy="3.14159265359 -1.57079265359 -1.57079265359" />
+    <parent link="root" />
+    <child link="thumb_base" />
+    <axis xyz="1 -1.38641e-14 -3.55957e-15" />
+  </joint>
+  <joint name="thumb_proximal_flexion" type="continuous">
+    <origin xyz="0.0253 0.0291978 0.00617349" rpy="-1.5708 -0.849309 -1.5708" />
+    <parent link="thumb_base" />
+    <child link="thumb_proximal" />
+    <axis xyz="1 -1.39659e-14 -3.49148e-15" />
+  </joint>
+  <joint name="thumb_tip_flexion" type="continuous">
+    <origin xyz="-0.0004 -0.0414682 -0.00162307" rpy="1.60992 -1.20303997384e-14 -1.93805155952e-14" />
+    <parent link="thumb_proximal" />
+    <child link="thumb_tip" />
+    <axis xyz="1 -1.38641e-14 -3.55957e-15" />
+  </joint>
+  <joint name="index_swivel" type="revolute">
+    <origin xyz="-0.00489834 -0.0132296 0.0273223" rpy="-2.07484e-16 3.54546e-15 -3.14159" />
+    <parent link="root" />
+    <child link="index_mount" />
+    <axis xyz="1.39659e-14 1 1.73472e-16" />
+    <limit effort="1" velocity="1" lower="-0.304069" upper="0.132263" />
+  </joint>
+  <joint name="index_mcp" type="revolute">
+    <origin xyz="0.0144169 0.0204003 0.0231401" rpy="-0.0495844 0.216802 -1.54991994453e-14" />
+    <parent link="index_mount" />
+    <child link="index_proximal" />
+    <axis xyz="1 0 0" />
+    <limit effort="1" velocity="1" lower="-1.55523" upper="0.0155655" />
+  </joint>
+  <joint name="index_pip" type="revolute">
+    <origin xyz="-0.0243 0.00064594 0.041495" rpy="-1.38012725172e-18 -1.70920599068e-24 2.36863550825e-22" />
+    <parent link="index_proximal" />
+    <child link="index_middle" />
+    <axis xyz="-1 0 0" />
+    <limit lower="0" upper="1.5708" effort="1" velocity="1" />
+  </joint>
+  <joint name="index_dip" type="revolute">
+    <origin xyz="0.0199999621917 -0.000771816769583 0.0374277195281" rpy="-1.38012725172e-18 -1.70920599068e-24 2.36863550825e-22" />
+    <parent link="index_middle" />
+    <child link="index_tip" />
+    <axis xyz="-1 0 0" />
+    <limit lower="0" upper="2.164778222" effort="1" velocity="1" />
+    <mimic joint="index_pip" multiplier="1.3781374" offset="0" />
+  </joint>
+  <joint name="index_rod_pivot" type="revolute">
+    <origin xyz="-0.0086 -0.00339232 0.0549757" rpy="-1.38012725172e-18 -1.70920599068e-24 2.36863550825e-22" />
+    <parent link="index_proximal" />
+    <child link="index_rod" />
+    <axis xyz="-1 0 0" />
+    <limit lower="0" upper="2.125241553" effort="1" velocity="1" />
+    <mimic joint="index_pip" multiplier="1.35296763" offset="0" />
+  </joint>
+  <joint name="middle_mcp" type="revolute">
+    <origin xyz="0.019971 -0.0336299 0.0593218" rpy="0.0155655 -1.41772e-14 -3.14159" />
+    <parent link="root" />
+    <child link="middle_proximal" />
+    <axis xyz="1 0 0" />
+    <limit effort="1" velocity="1" lower="-1.55523" upper="0.0155655" />
+  </joint>
+  <joint name="middle_pip" type="revolute">
+    <origin xyz="-0.0243 0.00064594 0.041495" rpy="-1.38012725172e-18 -1.70920599068e-24 2.36863550825e-22" />
+    <parent link="middle_proximal" />
+    <child link="middle_middle" />
+    <axis xyz="-1 0 0" />
+    <limit lower="0" upper="1.5708" effort="1" velocity="1" />
+  </joint>
+  <joint name="middle_dip" type="revolute">
+    <origin xyz="0.0199999621917 -0.000771816769583 0.0374277195281" rpy="-1.38012725172e-18 -1.70920599068e-24 2.36863550825e-22" />
+    <parent link="middle_middle" />
+    <child link="middle_tip" />
+    <axis xyz="-1 0 0" />
+    <limit lower="0" upper="2.164778222" effort="1" velocity="1" />
+    <mimic joint="middle_pip" multiplier="1.3781374" offset="0" />
+  </joint>
+  <joint name="middle_rod_pivot" type="revolute">
+    <origin xyz="-0.0086 -0.00339232 0.0549757" rpy="-1.38012725172e-18 -1.70920599068e-24 2.36863550825e-22" />
+    <parent link="middle_proximal" />
+    <child link="middle_rod" />
+    <axis xyz="-1 0 0" />
+    <limit lower="0" upper="2.125241553" effort="1" velocity="1" />
+    <mimic joint="middle_pip" multiplier="1.35296763" offset="0" />
+  </joint>
+  <joint name="outer_mcp" type="revolute">
+    <origin xyz="0.0570999 -0.0326299 0.0513218" rpy="-5.0307e-16 -9.76463e-20 -3.14159" />
+    <parent link="root" />
+    <child link="outer_proximal" />
+    <axis xyz="1 0 0" />
+    <limit effort="1" velocity="1" lower="-1.55523" upper="0.0155655" />
+  </joint>
+  <joint name="outer_pip" type="revolute">
+    <origin xyz="-0.0243 0.00064594 0.041495" rpy="3.4829214221e-32 6.39468926847e-36 -4.9122924141e-35" />
+    <parent link="outer_proximal" />
+    <child link="outer_middle" />
+    <axis xyz="-1 0 0" />
+    <limit lower="0" upper="1.5708" effort="1" velocity="1" />
+  </joint>
+  <joint name="outer_dip" type="revolute">
+    <origin xyz="0.0199999621917 -0.000771816769583 0.0374277195281" rpy="3.4829214221e-32 6.39468926847e-36 -4.9122924141e-35" />
+    <parent link="outer_middle" />
+    <child link="outer_tip" />
+    <axis xyz="-1 0 0" />
+    <limit lower="0" upper="2.164778222" effort="1" velocity="1" />
+    <mimic joint="outer_pip" multiplier="1.3781374" offset="0" />
+  </joint>
+  <joint name="outer_rod_pivot" type="revolute">
+    <origin xyz="-0.0086 -0.00339232 0.0549757" rpy="3.4829214221e-32 6.39468926847e-36 -4.9122924141e-35" />
+    <parent link="outer_proximal" />
+    <child link="outer_rod" />
+    <axis xyz="-1 0 0" />
+    <limit lower="0" upper="2.125241553" effort="1" velocity="1" />
+    <mimic joint="outer_pip" multiplier="1.35296763" offset="0" />
+  </joint>
+  <joint name="root_hardware_none_fixed" type="fixed">
+    <origin xyz="0.0232911 -0.0246296 0.0543223" rpy="-4.37114e-08 -3.54005e-15 -3.14159" />
+    <parent link="root" />
+    <child link="root_hardware_none" />
+  </joint>
+  <joint name="root_hardware_none_1_fixed" type="fixed">
+    <origin xyz="0.0240006 -0.0286296 0.0667271" rpy="-1.19249e-08 -3.56087e-15 -3.14159" />
+    <parent link="root" />
+    <child link="root_hardware_none_1" />
+  </joint>
+  <joint name="root_hardware_none_10_fixed" type="fixed">
+    <origin xyz="0.00010166 -0.0333017 0.0199175" rpy="3.14159 6.85593e-15 -1.5708" />
+    <parent link="root" />
+    <child link="root_hardware_none_10" />
+  </joint>
+  <joint name="root_hardware_none_11_fixed" type="fixed">
+    <origin xyz="0.00410166 -0.0340113 0.0323223" rpy="3.14159 6.85635e-15 -1.5708" />
+    <parent link="root" />
+    <child link="root_hardware_none_11" />
+  </joint>
+  <joint name="index_mount_hardware_none_14_fixed" type="fixed">
+    <origin xyz="0.0120745 0.0154 0.0312387" rpy="-1.19249e-08 0.216802 7.90547050798e-15" />
+    <parent link="index_mount" />
+    <child link="index_mount_hardware_none_14" />
+  </joint>
+  <joint name="index_mount_hardware_none_15_fixed" type="fixed">
+    <origin xyz="0.0100991 0.0114 0.0189717" rpy="-4.37114e-08 0.216802 7.86948035927e-15" />
+    <parent link="index_mount" />
+    <child link="index_mount_hardware_none_15" />
+  </joint>
+  <joint name="index_proximal_hardware_none_16_fixed" type="fixed">
+    <origin xyz="-0.00351829 0.00550525 0.0324182" rpy="1.55523 -9.99638648784e-15 -5.57084252047e-16" />
+    <parent link="index_proximal" />
+    <child link="index_proximal_hardware_none_16" />
+  </joint>
+  <joint name="index_proximal_hardware_none_17_fixed" type="fixed">
+    <origin xyz="-0.00422785 -0.00683574 0.0366108" rpy="1.55523 -1.46363356171e-14 -7.97995711191e-15" />
+    <parent link="index_proximal" />
+    <child link="index_proximal_hardware_none_17" />
+  </joint>
+  <joint name="root_hardware_none_20_fixed" type="fixed">
+    <origin xyz="0.06042 -0.0236296 0.0463223" rpy="-4.37114e-08 -1.69142e-14 -3.14159" />
+    <parent link="root" />
+    <child link="root_hardware_none_20" />
+  </joint>
+  <joint name="root_hardware_none_21_fixed" type="fixed">
+    <origin xyz="0.0611295 -0.0276296 0.0587271" rpy="-1.19249e-08 -1.69142e-14 -3.14159" />
+    <parent link="root" />
+    <child link="root_hardware_none_21" />
+  </joint>
+  <joint name="outer_proximal_hardware_none_26_fixed" type="fixed">
+    <origin xyz="-0.00351829 0.00550525 0.0324182" rpy="1.55523 -7.03629e-15 -3.37115978985e-15" />
+    <parent link="outer_proximal" />
+    <child link="outer_proximal_hardware_none_26" />
+  </joint>
+  <joint name="outer_proximal_hardware_none_27_fixed" type="fixed">
+    <origin xyz="-0.00422785 -0.00683574 0.0366108" rpy="1.55523 -7.03629e-15 -3.37115978985e-15" />
+    <parent link="outer_proximal" />
+    <child link="outer_proximal_hardware_none_27" />
+  </joint>
+  <joint name="thumb_proximal_hardware_none_28_fixed" type="fixed">
+    <origin xyz="0.0196722 -0.0361825 -0.00882661" rpy="-3.10247 1.1311099889e-14 -3.69774570537e-14" />
+    <parent link="thumb_proximal" />
+    <child link="thumb_proximal_hardware_none_28" />
+  </joint>
+  <joint name="thumb_proximal_hardware_none_29_fixed" type="fixed">
+    <origin xyz="0.0203817 -0.0326707 0.00372509" rpy="-3.10247 1.03232999126e-14 -3.63668383462e-14" />
+    <parent link="thumb_proximal" />
+    <child link="thumb_proximal_hardware_none_29" />
+  </joint>
+  <joint name="root_hardware_none_32_fixed" type="fixed">
+    <origin xyz="0.0191017 -0.0251296 -0.001396" rpy="3.14159265359 -1.57079265359 -1.57079265359" />
+    <parent link="root" />
+    <child link="root_hardware_none_32" />
+  </joint>
+  <joint name="root_hardware_none_34_fixed" type="fixed">
+    <origin xyz="0.0151017 -0.0375343 -0.00210555" rpy="3.14159265359 -1.57079265359 -1.57079265359" />
+    <parent link="root" />
+    <child link="root_hardware_none_34" />
+  </joint>
+  <joint name="thumb_base_hardware_none_36_fixed" type="fixed">
+    <origin xyz="0.0163 0.0117173 0.0184744" rpy="-4.37114e-08 -0.849309 -1.5708" />
+    <parent link="thumb_base" />
+    <child link="thumb_base_hardware_none_36" />
+  </joint>
+  <joint name="thumb_base_hardware_none_37_fixed" type="fixed">
+    <origin xyz="0.0203 0.0214998 0.026135" rpy="-1.19249e-08 -0.849309 -1.5708" />
+    <parent link="thumb_base" />
+    <child link="thumb_base_hardware_none_37" />
+  </joint>
+  <joint name="middle_proximal_hardware_none_4_fixed" type="fixed">
+    <origin xyz="-0.00422785 -0.00683574 0.0366108" rpy="1.55523 -7.03629000489e-15 -3.37116015926e-15" />
+    <parent link="middle_proximal" />
+    <child link="middle_proximal_hardware_none_4" />
+  </joint>
+  <joint name="middle_proximal_hardware_none_7_fixed" type="fixed">
+    <origin xyz="-0.00351829 0.00550525 0.0324182" rpy="1.55523 -7.02715999663e-15 -3.42827990025e-15" />
+    <parent link="middle_proximal" />
+    <child link="middle_proximal_hardware_none_7" />
+  </joint>
+</robot>

@@ -1,0 +1,345 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>DIY Dexterous Hand - Eric Chow</title>
+<meta name="description" content="Dexterous-hand design in Onshape and early 3D-printed finger prototyping, with a Python control bench for planned Unitree J288 actuation.">
+
+
+  <meta name="author" content="Eric Chow">
+  
+  <meta property="article:author" content="Eric Chow">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Eric Chow">
+<meta property="og:title" content="DIY Dexterous Hand">
+<meta property="og:url" content="https://hychowah.github.io/project/projects/07-diy-dexterous-hand/">
+
+
+  <meta property="og:description" content="Dexterous-hand design in Onshape and early 3D-printed finger prototyping, with a Python control bench for planned Unitree J288 actuation.">
+
+
+
+  <meta property="og:image" content="https://hychowah.github.io/project/assets/images/projects/dexterous-hand/cad.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2026-11-27T11:28:11+08:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://hychowah.github.io/project/projects/07-diy-dexterous-hand/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="text/javascript">
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/project/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <link rel="icon" type="image/svg+xml" href="/project/assets/images/favicon.svg">
+<link rel="stylesheet" href="/project/assets/css/custom.css">
+<script src="/project/assets/js/project-focus.js?v=2" defer></script>
+
+  </head>
+
+  <body class="layout--project">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/project/">
+          Eric Chow
+          <span class="site-subtitle">Robotics systems · Mechanical · Embedded</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/project/projects/"
+                
+                
+              >Projects</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/project/about/"
+                
+                
+              >About</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/project/assets/images/projects/dexterous-hand/cad.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          DIY Dexterous Hand
+
+        
+      </h1>
+      
+        <p class="page__lead">Dexterous-hand design in Onshape and early 3D-printed finger prototyping, with a Python control bench for planned Unitree J288 actuation.
+</p>
+      
+      
+
+
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="DIY Dexterous Hand">
+    <meta itemprop="description" content="Dexterous-hand design in Onshape and early 3D-printed finger prototyping, with a Python control bench for planned Unitree J288 actuation.">
+    <meta itemprop="datePublished" content="2026-11-27T11:28:11+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <figure class="robot-viewer" data-robot-viewer hidden
+        data-urdf="/project/assets/models/dexterous-hand/asm_main.urdf"
+        data-meshes="/project/assets/models/dexterous-hand/meshes.glb"
+        data-motion="/project/assets/models/dexterous-hand/motion.json" data-view="0.3 -1 0.35" data-rest-time="8.9">
+  <div class="robot-viewer__stage" data-robot-viewer-canvas role="img" aria-label="Interactive 3D model of the dexterous hand playing a simulated finger motion in a loop">
+    <p class="robot-viewer__status" data-robot-viewer-status>Loading 3D model…</p>
+  </div>
+  <figcaption class="robot-viewer__caption">
+    <span>URDF exported from the CAD model to test the design with different gesture motions. Drag to rotate.</span>
+    <button type="button" class="robot-viewer__toggle" data-robot-viewer-toggle disabled>Pause</button>
+  </figcaption>
+</figure>
+<script src="/project/assets/js/robot-viewer.js" defer></script>
+
+
+<nav class="portfolio-focus" data-project-focus data-supported-fields="mechanical software" aria-label="Project field" hidden>
+  <span class="portfolio-focus__label">Project focus</span>
+  <div class="portfolio-focus__options">
+    <button type="button" data-field="all" aria-pressed="true">All fields</button>
+    
+      <button type="button" data-field="mechanical" aria-pressed="false">Mechanical</button>
+    
+      <button type="button" data-field="software" aria-pressed="false">Software</button>
+    
+      
+    
+  </div>
+  
+</nav>
+
+<h2 id="overview">Overview</h2>
+
+<p><em>Personal DIY project · 2026–Present</em></p>
+
+<p><strong>Work in progress: mechanical design, early finger prototyping and actuator-control software.</strong></p>
+
+<p>I am developing a DIY dexterous hand in Onshape, with plans to use Unitree J288 servo motors for actuation.</p>
+
+<h2 data-project-fields="mechanical" id="design-and-prototyping">Design And Prototyping</h2>
+
+<p>The CAD work brings the fingers, thumb and palm into a hand assembly. I have also made a 3D-printed finger prototype as part of the mechanical development.</p>
+
+<p>The next steps are to refine the full-hand design, integrate the actuators into the finger mechanisms, and work towards assembly and hand-level motion testing.</p>
+
+<h2 data-project-fields="software" id="actuator-control-software">Actuator Control Software</h2>
+
+<p>Alongside the mechanical work, I am developing a Python bench-control tool for the J288 servos to support actuator setup and motion checks before full-hand integration.</p>
+
+<ul>
+  <li><strong>Commands and feedback:</strong> a terminal dashboard for position, speed and torque commands, gain adjustment, and live motor feedback, temperature and fault monitoring.</li>
+  <li><strong>Motion checks:</strong> configurable sinusoidal sweeps and stepped position commands, with position or torque traces to inspect the response.</li>
+  <li><strong>Integration groundwork:</strong> serial communication with CRC validation and separate per-motor command and feedback state on a shared connection. A simulation mode supports interface development without connected hardware.</li>
+</ul>
+
+<p><a href="https://github.com/hychowah/unitree-j288">View the J288 control-bench repository on GitHub</a>.</p>
+
+<h2 id="project-images">Project Images</h2>
+
+<div class="project-progress-gallery">
+
+
+
+
+<figure class="half ">
+  
+    
+      <a href="/project/assets/images/projects/dexterous-hand/cad.png" title="Hand assembly in Onshape — design in progress">
+          <img src="/project/assets/images/projects/dexterous-hand/cad.png" alt="Work-in-progress dexterous-hand CAD assembly displayed in the Onshape interface" />
+      </a>
+    
+  
+    
+      <a href="/project/assets/images/projects/dexterous-hand/finger-prototype.jpg" title="Early 3D-printed finger prototype">
+          <img src="/project/assets/images/projects/dexterous-hand/finger-prototype.jpg" alt="Early 3D-printed robotic finger prototype on a workbench" />
+      </a>
+    
+  
+  
+    <figcaption>Onshape CAD design and an early 3D-printed finger prototype from this ongoing personal project.
+</figcaption>
+  
+</figure>
+
+</div>
+
+
+<p class="project-focus-back"><a data-focus-link href="/project/projects/">← All projects</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/project/projects/06-fyp-electric-vehicle/" class="pagination--pager" title="Electric Vehicle Prototype
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- Cloudflare Web Analytics -->
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "16fec3faef0f43e0a1f03424395c6c26"}'></script>
+<!-- End Cloudflare Web Analytics -->
+
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://hychowah.github.io">Eric Chow</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/project/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

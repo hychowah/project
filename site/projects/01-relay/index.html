@@ -1,0 +1,335 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Relay — Personal AI Agent Workspace - Eric Chow</title>
+<meta name="description" content="A personal AI agent workspace that connects my own apps through one conversation. Any app can give the agent an interface through a small HTTP protocol.">
+
+
+  <meta name="author" content="Eric Chow">
+  
+  <meta property="article:author" content="Eric Chow">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Eric Chow">
+<meta property="og:title" content="Relay — Personal AI Agent Workspace">
+<meta property="og:url" content="https://hychowah.github.io/project/projects/01-relay/">
+
+
+  <meta property="og:description" content="A personal AI agent workspace that connects my own apps through one conversation. Any app can give the agent an interface through a small HTTP protocol.">
+
+
+
+  <meta property="og:image" content="https://hychowah.github.io/project/assets/images/projects/relay/split-view.webp">
+
+
+
+
+
+  <meta property="article:published_time" content="2026-11-27T11:28:11+08:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://hychowah.github.io/project/projects/01-relay/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="text/javascript">
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/project/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <link rel="icon" type="image/svg+xml" href="/project/assets/images/favicon.svg">
+<link rel="stylesheet" href="/project/assets/css/custom.css">
+<script src="/project/assets/js/project-focus.js?v=2" defer></script>
+
+  </head>
+
+  <body class="layout--project">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/project/">
+          Eric Chow
+          <span class="site-subtitle">Robotics systems · Mechanical · Embedded</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/project/projects/"
+                
+                
+              >Projects</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/project/about/"
+                
+                
+              >About</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/project/assets/images/projects/relay/split-view.webp');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Relay — Personal AI Agent Workspace
+
+        
+      </h1>
+      
+        <p class="page__lead">A personal AI agent workspace that connects my own apps through one conversation. Any app can give the agent an interface through a small HTTP protocol.
+</p>
+      
+      
+
+
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Relay — Personal AI Agent Workspace">
+    <meta itemprop="description" content="A personal AI agent workspace that connects my own apps through one conversation. Any app can give the agent an interface through a small HTTP protocol.">
+    <meta itemprop="datePublished" content="2026-11-27T11:28:11+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+        
+
+<nav class="portfolio-focus" data-project-focus data-supported-fields="software" aria-label="Project field" hidden>
+  <span class="portfolio-focus__label">Project focus</span>
+  <div class="portfolio-focus__options">
+    <button type="button" data-field="all" aria-pressed="true">All fields</button>
+    
+      
+    
+      <button type="button" data-field="software" aria-pressed="false">Software</button>
+    
+      
+    
+  </div>
+  
+</nav>
+
+<h2 id="overview">Overview</h2>
+
+<p><em>Personal project · Nov 2026 – Present</em></p>
+
+<p><strong>Prototype in daily use.</strong></p>
+
+<p>Relay is an AI agent workspace I built to work across my own tools. Each app opens as a tab, and one conversation stays beside them. When a question needs an app, the agent calls that app’s operations, answers with references to its source, and can show the result on the app’s own screen.</p>
+
+<p>Any app can join without changes to Relay, and joining gives the agent an interface to it. My URDF robot viewer, for example, became something the agent can use to check a robot model and test joint motions, which is how I tested the gesture motions on the <a href="/project/projects/07-diy-dexterous-hand/">DIY dexterous hand</a> page.</p>
+
+<h2 data-project-fields="software" id="agent-workspace">Agent Workspace</h2>
+
+<p>The Relay service runs on Node 24 with SQLite and an agent runtime that can use Claude, OpenAI or DeepSeek models. It keeps conversations, memory and model keys in one place, never in the clients or apps. The main client is a Flutter app for macOS, with tabs, split views and a built-in browser. A React page provides the same chat and apps on other computers.</p>
+
+<ul>
+  <li><strong>Isolation:</strong> each app runs on its own origin in a sandboxed frame. Shared folders are read-only, with hidden files such as <code class="language-plaintext highlighter-rouge">.env</code> kept out of reach.</li>
+  <li><strong>The user takes the last step:</strong> the agent can fill in a web form for review, but submitting it is left to me.</li>
+  <li><strong>Network safety:</strong> the service answers only its own address, so other websites cannot reach it through a renamed domain (DNS rebinding).</li>
+  <li><strong>Persistence:</strong> tabs, split views and the conversation return after a restart, and other devices can open the same tabs.</li>
+</ul>
+
+<h2 data-project-fields="software" id="apps-as-agent-interfaces">Apps As Agent Interfaces</h2>
+
+<p>An app keeps its own screens and technology, and Relay holds no code for any particular app. To give the agent an interface, the app serves a small HTTP protocol:</p>
+
+<ul>
+  <li><strong>Manifest:</strong> the app’s name, what it is for and how to use it.</li>
+  <li><strong>Operations:</strong> named calls the agent loads only when a question needs that app, so other apps stay out of the model’s context. The agent sees only what the operations return.</li>
+  <li><strong>Views:</strong> an operation can return a view, such as a part to highlight, which the app draws on its own screen inside Relay.</li>
+</ul>
+
+<p>The robot viewer shows how this works. It is a self-hosted three.js app for URDF and xacro models, and through Relay it offers operations to inspect a robot, edit its files (guarded so an edit cannot overwrite someone else’s change), play a keyframed joint motion and capture a frame of it. With these, an agent wrote the hand’s gesture motions, checked the captured poses for finger interference and refined the keyframes while I watched the same viewer in a tab.</p>
+
+<p><a href="https://github.com/hychowah/Relay">View Relay on GitHub</a></p>
+
+<h2 id="interface-previews">Interface Previews</h2>
+
+<figure class="half ">
+  
+    
+      <a href="/project/assets/images/projects/relay/workspace.webp" title="Relay workspace: connected apps and one conversation">
+          <img src="/project/assets/images/projects/relay/workspace.webp" alt="Relay start page listing connected apps, with the conversation panel on the right" />
+      </a>
+    
+  
+    
+      <a href="/project/assets/images/projects/relay/split-view.webp" title="Two apps side by side in a split tab, including the robot viewer">
+          <img src="/project/assets/images/projects/relay/split-view.webp" alt="Relay split view with a coding-session app beside the robot viewer showing the dexterous-hand URDF and its joint controls" />
+      </a>
+    
+  
+  
+    <figcaption>The Relay workspace with its connected apps, and a split tab with the robot viewer beside another app.
+</figcaption>
+  
+</figure>
+
+
+
+<p class="project-focus-back"><a data-focus-link href="/project/projects/">← All projects</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/project/projects/02-painting-robot/" class="pagination--pager" title="Suspended Painting Robot
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- Cloudflare Web Analytics -->
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "16fec3faef0f43e0a1f03424395c6c26"}'></script>
+<!-- End Cloudflare Web Analytics -->
+
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://hychowah.github.io">Eric Chow</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/project/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
